@@ -555,7 +555,7 @@ video {
   font-weight: 700;
 }
 
-.text-red-500 {
+.text-brightRed {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: hsl(12 28% 59% / var(--tw-text-opacity));
 }
