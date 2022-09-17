@@ -1,0 +1,40 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root {
+   --color-bluishDark: rgb(3, 53, 81);
+   --color-orange: #d35827;
+   --color-dark: #022031;
+   --color-light: #f4f8fb;
+   --color-white: #ffffff;
+}
+body,
+html {
+   font-family: "Archivo", sans-serif;
+   color: var(--color-bluishDark);
+}
+
+p {
+   line-height: 140%;
+   font-size: 0.9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   line-height: auto;
+}
+
+/* resets */
+.container {
+   padding-inline: 20px;
+}
+
+/* Inner Pages Hero */
+.hero.hero--innerPage {
+}

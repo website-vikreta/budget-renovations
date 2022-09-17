@@ -1,3 +1,4 @@
+
 tailwind.config = {
    theme: {
       screens: {
@@ -7,8 +8,17 @@ tailwind.config = {
          xl: "1440px",
       },
       extend: {
+         fontFamily: {
+            Archivo: ["Archivo", "sans-serif"],
+         },
          colors: {
-            clifford: "#da373d",
+            // Branding
+            bluishDark: "#033551",
+            orange: "#D35827",
+            // Supporting Font
+            dark: "#022031",
+            light: "#F4F8FB",
+            white: "#FFFFFF"
          },
       },
    },

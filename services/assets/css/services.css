@@ -1,0 +1,8 @@
+.hero.hero--serviceHomePage {
+   background: linear-gradient(rgba(3, 53, 81, 0.6), rgba(3, 53, 81, 0.6)),
+      url("../img/serviceHome-hero-img.png");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: top center;
+   background-repeat: no-repeat;
+}
