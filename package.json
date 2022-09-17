@@ -4,8 +4,8 @@
    "description": "",
    "main": "index.js",
    "scripts": {
-      "build": "tailwindcss -i ./input.css -o ./src/css/main.css",
-      "dev": "tailwindcss -i ./input.css -o ./src/css/main.css --watch"
+      "build": "tailwindcss -i ./input.css -o ./css/main.css",
+      "dev": "tailwindcss -i ./input.css -o ./css/main.css --watch"
    },
    "repository": {
       "type": "git",
