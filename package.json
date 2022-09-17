@@ -1,0 +1,24 @@
+{
+   "name": "budget-renovations",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "build": "tailwindcss -i ./input.css -o ./src/css/main.css",
+      "dev": "tailwindcss -i ./input.css -o ./src/css/main.css --watch"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/website-vikreta/budget-renovations.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/website-vikreta/budget-renovations/issues"
+   },
+   "homepage": "https://github.com/website-vikreta/budget-renovations#readme",
+   "devDependencies": {
+      "tailwindcss": "^3.1.8"
+   }
+}
