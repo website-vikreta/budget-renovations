@@ -5,7 +5,7 @@
 }
 :root {
    --color-bluishDark: rgb(3, 53, 81);
-   --color-orange: #d35827;
+   --color-orange: rgb(211, 88, 39);
    --color-dark: #022031;
    --color-light: #f4f8fb;
    --color-white: #ffffff;
@@ -35,6 +35,99 @@ h6 {
    padding-inline: 20px;
 }
 
+/* Header & Footer */
+.footer-overlay {
+   background-image: linear-gradient(
+         rgba(211, 88, 39, 0.85),
+         rgba(211, 88, 39, 0.85)
+      ),
+      url("../img/footer-overlay-img.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
 /* Inner Pages Hero */
 .hero.hero--innerPage {
+}
+
+/* Components Styles */
+.btn {
+   display: inline-block;
+   border: 1px solid var(--btn-color);
+   background: var(--btn-color);
+   width: fit-content;
+   min-width: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 0.8rem 2rem;
+   color: var(--color-dark);
+   font-weight: 500;
+   margin: 0;
+   position: relative;
+   z-index: 10;
+   transition: 0.35s ease-out;
+}
+.btn::after {
+   content: "";
+   position: absolute;
+   top: calc(100% + 4px);
+   left: 50%;
+   transform: translateX(-50%);
+   width: calc(100% + 2px);
+   height: 1px;
+   background: var(--btn-color);
+   pointer-events: none;
+   transition: 0.35s ease-out;
+   z-index: -1;
+}
+
+/* Button Colors */
+.btn.btn-light,
+.btn.btn-hover-light:hover {
+   --btn-color: var(--color-light);
+}
+.btn.btn-dark,
+.btn.btn-hover-dark:hover {
+   --btn-color: var(--color-bluishDark);
+}
+.btn.btn-orange,
+.btn.btn-hover-orange:hover {
+   --btn-color: var(--color-orange);
+}
+.btn.btn-black,
+.btn.btn-hover-black:hover {
+   --btn-color: var(--color-dark);
+}
+
+/* Button Sizes */
+.btn.btn-sm {
+   padding: 0.5rem 1.25rem;
+   min-width: 100px;
+   font-weight: 400;
+   gap: 0.25rem;
+   font-size: 0.9rem;
+}
+.btn.btn-sm::after {
+   top: calc(100% + 3px);
+}
+
+/* Button Types */
+.btn.btn-secondary {
+   background: transparent;
+   color: var(--btn-color);
+}
+
+/* Button hover State */
+.btn:hover::after {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+}
+.btn:hover {
+   color: var(--color-light);
 }
