@@ -1,11 +1,236 @@
+// ===========================================================
+// ! HEADER of the website
+// ===========================================================
+
+// Class
 class WebsiteHeader extends HTMLElement {
    connectedCallback() {
-      this.innerHTML = `Lorem Ipsum`;
+      this.innerHTML = `
+         <header>
+            <!-- Top Nav -->
+            <aside class="hidden md:block bg-light">
+               <div class="container mx-auto">
+                  <div class="flex justify-between items-center py-6">
+                     <!-- left part -->
+                     <div class="flex items-center gap-8">
+                        <div class="flex items-center gap-2">
+                           <i class="bi bi-map text-orange text-2xl"></i>
+                           <div class="flex flex-col">
+                              <span
+                                 class="uppercase text-[11px] opacity-80 tracking-wide"
+                              >
+                                 find us
+                              </span>
+                              <a
+                                 href="#"
+                                 class="uppercase font-semibold text-sm leading-none hover:text-orange"
+                              >
+                                 Somewhere, New Zealand
+                              </a>
+                           </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                           <i class="bi bi-phone text-orange text-2xl"></i>
+                           <div class="flex flex-col">
+                              <span
+                                 class="uppercase text-[11px] opacity-80 tracking-wide"
+                              >
+                                 call us today
+                              </span>
+                              <a
+                                 href="#"
+                                 class="uppercase font-semibold text-sm leading-none hover:text-orange"
+                              >
+                                 +64 3 345 6789
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- right part -->
+                     <div class="flex items-center gap-2">
+                        <i class="bi bi-envelope text-orange text-2xl"></i>
+                        <div class="flex flex-col">
+                           <span
+                              class="uppercase text-[11px] opacity-80 tracking-wide"
+                           >
+                              Email Us Now
+                           </span>
+                           <a
+                              href="#"
+                              class="uppercase font-semibold text-sm leading-none hover:text-orange"
+                           >
+                              sitename@email.com
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </aside>
+
+            <!-- Main Nav -->
+            <nav class="bg-dark text-light" id="mainNav">
+               <div class="container mx-auto relative">
+                  <div class="flex justify-end items-center">
+                     <!-- Logo -->
+                     <div class="nav-logo-wrapper">
+                        <div class="nav-logo px-[1rem] lg:px-[1.5rem]">
+                           <a href="#">
+                              <img
+                                 src="../assets/img/budget-renovation-logo.svg"
+                                 alt="Budget Renovations Logo"
+                                 class="w-[120px] lg:w-[160px]"
+                              />
+                           </a>
+                        </div>
+                     </div>
+                     <!-- Navigation Links -->
+                     <ul
+                        class="hidden md:flex items-center gap-4 mainNavMenu desktopNavMenu"
+                     >
+                        <li>
+                           <a
+                              href="../index.html"
+                              class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
+                           >
+                              Home
+                           </a>
+                        </li>
+                        <li>
+                           <a
+                              href="../about.html"
+                              class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
+                           >
+                              About Us
+                           </a>
+                        </li>
+                        <li>
+                           <a
+                              href="../services/index.html"
+                              class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
+                           >
+                              Services
+                           </a>
+                        </li>
+                        <li>
+                           <a
+                              href="../blog/index.html"
+                              class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
+                           >
+                              Blog
+                           </a>
+                        </li>
+                        <li>
+                           <a
+                              href="../contact.html"
+                              class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
+                           >
+                              Contact Us
+                           </a>
+                        </li>
+                     </ul>
+
+                     <!-- Hamburger -->
+                     <button
+                        id="btnToggleNavMenu"
+                        class="block md:hidden focus:outline-none py-3"
+                     >
+                        <i class="bi bi-list text-3xl"></i>
+                     </button>
+
+                     <!-- Mobile Menu -->
+                     <div class="md:hidden">
+                        <ul
+                           id="mobileNavMenu"
+                           class="mainNavMenu mobileNavMenu absolute hidden flex-col gap-4 items-center self-end p-10 mt-10 sm:w-auto sm:self-center drop-shadow-lg bg-light text-bluishDark left-5 right-5 top-[4rem]"
+                        >
+                           <li>
+                              <a
+                                 href="../index.html"
+                                 class="font-medium hover:text-orange"
+                              >
+                                 Home
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 href="../about.html"
+                                 class="font-medium hover:text-orange"
+                              >
+                                 About Us
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 href="../services/index.html"
+                                 class="font-medium hover:text-orange"
+                              >
+                                 Services
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 href="../blog/index.html"
+                                 class="font-medium hover:text-orange"
+                              >
+                                 Blog
+                              </a>
+                           </li>
+                           <li>
+                              <a
+                                 href="../contact.html"
+                                 class="font-medium hover:text-orange"
+                              >
+                                 Contact Us
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+         </header>
+      `;
    }
 }
+// Rendering
 customElements.define('website-header', WebsiteHeader);
 
+// Navbar Toggle
+const btnMenu = document.getElementById("btnToggleNavMenu");
+const mainNav = document.getElementById("mobileNavMenu");
 
+btnMenu.addEventListener('click', function () {
+   mainNav.classList.toggle('flex');
+   mainNav.classList.toggle('hidden');
+})
+
+// Find outside click
+$(document).click(function (event) {
+   if ($('#mobileNavMenu').hasClass('flex') && $(event.target).closest("#btnToggleNavMenu").length == 0) {
+      $('#mobileNavMenu').toggleClass('hidden');
+      $('#mobileNavMenu').toggleClass('flex');
+   }
+});
+
+// Active Link
+$(function () {
+   var current = location.pathname;
+   console.log(current);
+   $('.mainNavMenu li a').each(function () {
+      var $this = $(this);
+      console.log($this.attr('href').includes(current));
+      // if the current path is like this link, make it active
+      if ($this.attr('href').includes(current) !== false) {
+         $this.addClass('active');
+      }
+   })
+})
+
+
+// ===========================================================
+// ! FOOTER of the website
+// ===========================================================
+// Element Class
 class WebsiteFooter extends HTMLElement {
    connectedCallback() {
       this.innerHTML = `
@@ -208,4 +433,5 @@ class WebsiteFooter extends HTMLElement {
       `;
    }
 }
+// Rendering
 customElements.define('website-footer', WebsiteFooter);
