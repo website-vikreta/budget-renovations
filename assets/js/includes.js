@@ -214,7 +214,7 @@ $(document).click(function (event) {
 
 // Active Link
 $(function () {
-   var current = location.pathname;
+   var current = location.pathname.replace('/budget-renovations', '');
    console.log(current);
    $('.mainNavMenu li a').each(function () {
       var $this = $(this);
