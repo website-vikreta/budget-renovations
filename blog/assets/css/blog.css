@@ -1,0 +1,42 @@
+.hero.hero--blogPage {
+   background: linear-gradient(rgba(3, 53, 81, 0.6), rgba(3, 53, 81, 0.6)),
+      url("../img/blog-hero-img.webp");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: top center;
+   background-repeat: no-repeat;
+}
+.hero.hero--blogInnerPage {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(3, 53, 81, 0.6)),
+      url("../img/blog-article-1-img.webp");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: top center;
+   background-repeat: no-repeat;
+}
+
+.blog .content p {
+   margin-block: 1.25rem;
+   font-size: 1rem;
+}
+.blog .content p:first-child:first-letter {
+   font-size: 2rem;
+   font-weight: 800;
+}
+.blog .content a {
+   color: var(--color-orange);
+}
+.blog .content a:hover {
+   text-decoration: underline;
+}
+.blog .content b {
+   font-weight: 700;
+}
+.blog .content blockquote {
+   padding: 1.5rem;
+   background: var(--color-light);
+   border-left: 2px solid var(--color-orange);
+   font-size: 1rem;
+   line-height: 1.5;
+   margin-block: 1.25rem;
+}
