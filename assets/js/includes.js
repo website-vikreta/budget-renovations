@@ -133,6 +133,7 @@ class WebsiteHeader extends HTMLElement {
                      <button
                         id="btnToggleNavMenu"
                         class="block md:hidden focus:outline-none py-3"
+                        title="Toggle Menu"
                      >
                         <i class="bi bi-list text-3xl"></i>
                      </button>
@@ -205,26 +206,40 @@ btnMenu.addEventListener('click', function () {
 })
 
 // Find outside click
-$(document).click(function (event) {
-   if ($('#mobileNavMenu').hasClass('flex') && $(event.target).closest("#btnToggleNavMenu").length == 0) {
-      $('#mobileNavMenu').toggleClass('hidden');
-      $('#mobileNavMenu').toggleClass('flex');
+var ignoreClickOnMeElement = document.getElementById('btnToggleNavMenu');
+
+document.addEventListener('click', function (event) {
+   var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+   if (!isClickInsideElement) {
+      mainNav.classList.toggle("hidden");
+      mainNav.classList.toggle("flex");
    }
 });
 
 // Active Link
-$(function () {
-   var current = location.pathname.replace('/budget-renovations', '');
-   console.log(current);
-   $('.mainNavMenu li a').each(function () {
-      var $this = $(this);
-      console.log($this.attr('href').includes(current));
-      // if the current path is like this link, make it active
-      if ($this.attr('href').includes(current) !== false) {
-         $this.addClass('active');
-      }
-   })
-})
+const navLinks = document.querySelectorAll(".mainNavMenu li a");
+const currentURL = location.pathname.replace('/budget-renovations', ''); //budget-renovation is the name of git repo
+navLinks.forEach(link => {
+   if (link.getAttribute('href').includes(currentURL) !== false) {
+      link.classList.toggle("active");
+   }
+});
+
+// Sticky Navigation On Top
+const navigationMenu = document.querySelector('nav');
+window.onscroll = function () {
+   if (window.pageYOffset > 80) {
+      navigationMenu.style.position = "fixed";
+      navigationMenu.style.top = "0px";
+      navigationMenu.style.width = "100%";
+      navigationMenu.style.zIndex = "1000";
+   } else {
+      navigationMenu.style.position = "static";
+      navigationMenu.style.top = "initial";
+      navigationMenu.style.width = "100%";
+      navigationMenu.style.zIndex = "1000";
+   }
+}
 
 
 // ===========================================================
@@ -268,22 +283,26 @@ class WebsiteFooter extends HTMLElement {
                      <div class="flex space-x-3">
                         <a
                            href="#"
-                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:text-light"
+                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#C13584] hover:text-light"
+                           title="Follow on Instagram"
                            ><i class="bi bi-instagram"></i
                         ></a>
                         <a
                            href="#"
-                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:text-light"
+                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#4267B2] hover:text-light"
+                           title="Follow on Facebook"
                            ><i class="bi bi-facebook"></i
                         ></a>
                         <a
                            href="#"
-                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:text-light"
+                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#1DA1F2] hover:text-light"
+                           title="Follow on Twitter"
                            ><i class="bi bi-twitter"></i
                         ></a>
                         <a
                            href="#"
-                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:text-light"
+                           class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#0077b5] hover:text-light"
+                           title="Follow on Linkedin"
                            ><i class="bi bi-linkedin"></i
                         ></a>
                      </div>

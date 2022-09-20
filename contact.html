@@ -34,31 +34,244 @@
       />
 
       <!-- SEO -->
-      <title></title>
-      <meta content="" name="description" />
-      <meta content="" name="keywords" />
+      <title>Contact Us</title>
+      <meta content="Dummy Description" name="description" />
+      <meta content="keyword 1, keyword 2" name="keywords" />
 
-      <!-- Tailwind -->
+      <!-- Tailwind & Bootstrap Icons -->
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="./assets/js/tailwind.config.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      />
 
       <!-- CSS -->
       <link rel="stylesheet" href="./assets/css/main.css" />
    </head>
    <body>
       <!-- Header -->
-      <header></header>
+      <website-header></website-header>
 
       <!-- Main -->
-      <main></main>
+      <main>
+         <!-- Hero / Header -->
+         <section id="hero" class="hero hero--innerPage hero--contactPage">
+            <div class="container mx-auto py-[15vh] text-light">
+               <div
+                  class="flex flex-col items-center justify-center space-y-[1rem] mx-auto lg:min-h-[40vh] md:w-3/5 lg:w-3/6"
+               >
+                  <h5 class="uppercase font-bold tracking-wider">Contact Us</h5>
+                  <h1
+                     class="font-extrabold text-4xl normal-case text-center lg:text-5xl"
+                  >
+                     Let us be the part of
+                     <span class="text-orange font-black">change</span> in your
+                     house
+                  </h1>
+               </div>
+            </div>
+         </section>
+
+         <!-- Contact Section -->
+         <div class="contact relative my-20 md:my-[100px]" id="contact">
+            <div class="container mx-auto">
+               <!-- Contact Form -->
+               <div class="w-full lg:w-3/5 xl:w-1/2 shadow-2xl relative z-10">
+                  <!-- form header -->
+                  <div
+                     class="bg-light border-b-2 p-6 py-0 font-bold capitalize text-lg relative contact-form-heading"
+                  >
+                     <span class="py-5 inline-block">Send us a message</span>
+                  </div>
+                  <!-- form main -->
+                  <div class="p-6 py-10 bg-white">
+                     <form
+                        action="#"
+                        id="formContactUs"
+                        class="flex flex-col gap-5"
+                     >
+                        <!-- Row -->
+                        <div class="grid lg:grid-cols-2 gap-4">
+                           <div class="form-group">
+                              <label
+                                 for="inputFirstName"
+                                 class="font-normal opacity-80"
+                                 >First Name</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputFirstName"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorFirstName"
+                              >
+                              </span>
+                           </div>
+                           <div class="form-group">
+                              <label
+                                 for="inputEmailAddress"
+                                 class="font-normal opacity-80"
+                                 >Email Address</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputEmailAddress"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorEmailAddress"
+                              >
+                              </span>
+                           </div>
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-4">
+                           <div class="form-group">
+                              <label
+                                 for="inputPhoneNumber"
+                                 class="font-normal opacity-80"
+                                 >Phone Number</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputPhoneNumber"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorPhoneNumber"
+                              >
+                              </span>
+                           </div>
+                           <div class="form-group">
+                              <label
+                                 for="inputSubject"
+                                 class="font-normal opacity-80"
+                                 >Subject</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputSubject"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorSubject"
+                              >
+                              </span>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label
+                              for="inputMessage"
+                              class="font-normal opacity-80"
+                              >Message</label
+                           >
+                           <textarea
+                              id="inputMessage"
+                              class="form-control w-full p-2 border-2 resize-y focus:border-orange focus:outline-none"
+                              cols="30"
+                              rows="3"
+                           ></textarea>
+                           <span
+                              class="error text-red-500 text-sm"
+                              id="errorMessage"
+                           >
+                           </span>
+                        </div>
+                        <button
+                           class="btn btn-primary btn-orange btn-hover-dark text-light"
+                        >
+                           <i class="bi bi-send"></i>
+                           <span>Send Now</span>
+                        </button>
+                     </form>
+                  </div>
+                  <!-- form footer -->
+                  <div class="bg-bluishDark text-light p-6 py-7">
+                     <div
+                        class="flex items-center justify-between flex-wrap gap-5"
+                     >
+                        <div class="flex items-center gap-2">
+                           <i class="bi bi-map text-orange text-2xl"></i>
+                           <div class="flex flex-col">
+                              <span
+                                 class="uppercase text-[11px] opacity-80 tracking-wide"
+                              >
+                                 find us
+                              </span>
+                              <a
+                                 href="#"
+                                 class="uppercase font-semibold text-sm leading-none hover:text-orange"
+                              >
+                                 Somewhere, New Zealand
+                              </a>
+                           </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                           <i class="bi bi-phone text-orange text-2xl"></i>
+                           <div class="flex flex-col">
+                              <span
+                                 class="uppercase text-[11px] opacity-80 tracking-wide"
+                              >
+                                 call us today
+                              </span>
+                              <a
+                                 href="#"
+                                 class="uppercase font-semibold text-sm leading-none hover:text-orange"
+                              >
+                                 +64 3 345 6789
+                              </a>
+                           </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                           <i class="bi bi-envelope text-orange text-2xl"></i>
+                           <div class="flex flex-col">
+                              <span
+                                 class="uppercase text-[11px] opacity-80 tracking-wide"
+                              >
+                                 Email Us Now
+                              </span>
+                              <a
+                                 href="#"
+                                 class="uppercase font-semibold text-sm leading-none hover:text-orange"
+                              >
+                                 sitename@email.com
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Map -->
+               <div
+                  class="map w-full mt-10 z-[0] lg:absolute lg:top-7 lg:left-0"
+               >
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.0649040015537!2d76.55913612356969!3d20.707588859835404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd750d8f753acbf%3A0xe5566ee6124d1dbb!2sA%20K%20National%20High%20School!5e0!3m2!1sen!2sin!4v1663640577049!5m2!1sen!2sin"
+                     width="100%"
+                     style="border: 0"
+                     allowfullscreen=""
+                     loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"
+                     class="h-full min-h-[200px] lg:h-[444px]"
+                  ></iframe>
+               </div>
+            </div>
+         </div>
+      </main>
 
       <!-- Footer -->
-      <footer></footer>
+      <website-footer></website-footer>
 
       <!-- ========================================================= -->
       <!-- Scripts -->
       <!-- ========================================================= -->
-      <script src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+      <script type="module" src="./assets/js/includes.js"></script>
       <script src="./assets/js/global.js"></script>
       <script></script>
    </body>
