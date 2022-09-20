@@ -1,3 +1,30 @@
+// Defining Layering
+const currentURL = location.pathname.replace('/budget-renovations', '');  //budget-renovation is the name of git repo
+let urlList = currentURL.replace("/", " ").split("/");
+let layer = urlList.length;
+let prependURLString = "";
+switch (layer) {
+   case 1:
+      prependURLString = "./";
+      break;
+   case 2:
+      prependURLString = "../";
+      break;
+   case 3:
+      prependURLString = "../../";
+      break;
+   case 4:
+      prependURLString = "../../../";
+      break;
+   case 5:
+      prependURLString = "../../.../";
+      break;
+   default:
+      prependURLString = "./";
+      break;
+}
+
+
 // ===========================================================
 // ! HEADER of the website
 // ===========================================================
@@ -76,7 +103,7 @@ class WebsiteHeader extends HTMLElement {
                         <div class="nav-logo px-[1rem] lg:px-[1.5rem]">
                            <a href="#">
                               <img
-                                 src="../assets/img/budget-renovation-logo.svg"
+                                 src="${prependURLString}assets/img/budget-renovation-logo.svg"
                                  alt="Budget Renovations Logo"
                                  class="w-[120px] lg:w-[160px]"
                               />
@@ -89,7 +116,7 @@ class WebsiteHeader extends HTMLElement {
                      >
                         <li>
                            <a
-                              href="../index.html"
+                              href="${prependURLString}index.html"
                               class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
                            >
                               Home
@@ -97,7 +124,7 @@ class WebsiteHeader extends HTMLElement {
                         </li>
                         <li>
                            <a
-                              href="../about.html"
+                              href="${prependURLString}about.html"
                               class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
                            >
                               About Us
@@ -105,7 +132,7 @@ class WebsiteHeader extends HTMLElement {
                         </li>
                         <li>
                            <a
-                              href="../services/index.html"
+                              href="${prependURLString}services/index.html"
                               class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
                            >
                               Services
@@ -113,7 +140,7 @@ class WebsiteHeader extends HTMLElement {
                         </li>
                         <li>
                            <a
-                              href="../blog/index.html"
+                              href="${prependURLString}blog/index.html"
                               class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
                            >
                               Blog
@@ -121,7 +148,7 @@ class WebsiteHeader extends HTMLElement {
                         </li>
                         <li>
                            <a
-                              href="../contact.html"
+                              href="${prependURLString}contact.html"
                               class="font-medium px-3 py-4 lg:p-5 inline-block capitalize text-md hover:text-orange"
                            >
                               Contact Us
@@ -146,7 +173,7 @@ class WebsiteHeader extends HTMLElement {
                         >
                            <li>
                               <a
-                                 href="../index.html"
+                                 href="${prependURLString}index.html"
                                  class="font-medium hover:text-orange"
                               >
                                  Home
@@ -154,7 +181,7 @@ class WebsiteHeader extends HTMLElement {
                            </li>
                            <li>
                               <a
-                                 href="../about.html"
+                                 href="${prependURLString}about.html"
                                  class="font-medium hover:text-orange"
                               >
                                  About Us
@@ -162,7 +189,7 @@ class WebsiteHeader extends HTMLElement {
                            </li>
                            <li>
                               <a
-                                 href="../services/index.html"
+                                 href="${prependURLString}services/index.html"
                                  class="font-medium hover:text-orange"
                               >
                                  Services
@@ -170,7 +197,7 @@ class WebsiteHeader extends HTMLElement {
                            </li>
                            <li>
                               <a
-                                 href="../blog/index.html"
+                                 href="${prependURLString}blog/index.html"
                                  class="font-medium hover:text-orange"
                               >
                                  Blog
@@ -178,7 +205,7 @@ class WebsiteHeader extends HTMLElement {
                            </li>
                            <li>
                               <a
-                                 href="../contact.html"
+                                 href="${prependURLString}contact.html"
                                  class="font-medium hover:text-orange"
                               >
                                  Contact Us
@@ -218,7 +245,7 @@ document.addEventListener('click', function (event) {
 
 // Active Link
 const navLinks = document.querySelectorAll(".mainNavMenu li a");
-const currentURL = location.pathname.replace('/budget-renovations', ''); //budget-renovation is the name of git repo
+// const currentURL = location.pathname.replace('/budget-renovations', '');
 navLinks.forEach(link => {
    if (link.getAttribute('href').includes(currentURL) !== false) {
       link.classList.toggle("active");
@@ -268,7 +295,7 @@ class WebsiteFooter extends HTMLElement {
                         voluptatem ut voluptate est dignissimos!
                      </p>
                      <a
-                        href="../contact.html"
+                        href="${prependURLString}contact.html"
                         class="btn btn-secondary btn-light btn-hover-orange mt-3"
                      >
                         Contact Us
@@ -319,7 +346,7 @@ class WebsiteFooter extends HTMLElement {
                   class="max-w-[150px] h-auto p-2 bg-light mb-10 xl:w-full xl:absolute xl:top-0 xl:left-[10rem] xl:max-w-[200px] xl:px-5 xl:py-4 xl:rounded-lg xl:-translate-y-[58%]"
                >
                   <img
-                     src="../assets/img/budget-renovation-logo.svg"
+                     src="${prependURLString}assets/img/budget-renovation-logo.svg"
                      alt="Budget Renovation Logo"
                   />
                </div>
