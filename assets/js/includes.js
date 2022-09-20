@@ -101,7 +101,7 @@ class WebsiteHeader extends HTMLElement {
                      <!-- Logo -->
                      <div class="nav-logo-wrapper">
                         <div class="nav-logo px-[1rem] lg:px-[1.5rem]">
-                           <a href="#">
+                           <a href="${prependURLString}index.html">
                               <img
                                  src="${prependURLString}assets/img/budget-renovation-logo.svg"
                                  alt="Budget Renovations Logo"
