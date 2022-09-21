@@ -21,5 +21,5 @@ tailwind.config = {
             white: "#FFFFFF"
          },
       },
-   },
+   }
 };

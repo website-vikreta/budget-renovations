@@ -237,7 +237,7 @@ var ignoreClickOnMeElement = document.getElementById('btnToggleNavMenu');
 
 document.addEventListener('click', function (event) {
    var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
-   if (!isClickInsideElement) {
+   if (!isClickInsideElement && mainNav.classList.contains("flex")) {
       mainNav.classList.toggle("hidden");
       mainNav.classList.toggle("flex");
    }

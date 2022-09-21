@@ -40,3 +40,9 @@
    line-height: 1.5;
    margin-block: 1.25rem;
 }
+.blog .blog-card p {
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
