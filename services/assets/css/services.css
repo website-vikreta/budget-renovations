@@ -6,3 +6,11 @@
    background-position: top center;
    background-repeat: no-repeat;
 }
+.hero.hero--homeRenovationPage {
+   background: linear-gradient(rgba(3, 53, 81, 0.6), rgba(3, 53, 81, 0.6)),
+      url("../img/homeRenovation-hero-img.webp");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: top center;
+   background-repeat: no-repeat;
+}

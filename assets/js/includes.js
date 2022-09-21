@@ -247,7 +247,7 @@ document.addEventListener('click', function (event) {
 const navLinks = document.querySelectorAll(".mainNavMenu li a");
 // const currentURL = location.pathname.replace('/budget-renovations', '');
 navLinks.forEach(link => {
-   if (link.getAttribute('href').includes(currentURL) !== false) {
+   if (link.getAttribute('href').split("/")[1] == currentURL.split("/")[1]) {
       link.classList.toggle("active");
    }
 });

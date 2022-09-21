@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Favicon -->
+      <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="../assets/img/favicon/apple-touch-icon.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="../assets/img/favicon/favicon-32x32.png"
+      />
+      <link
+         rel="icon"
+         type="image/png"
+         sizes="16x16"
+         href="../assets/img/favicon/favicon-16x16.png"
+      />
+      <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- SEO -->
+      <title>Our Services</title>
+      <meta content="Dummy Description" name="description" />
+      <meta content="keyword 1, keyword 2" name="keywords" />
+
+      <!-- Tailwind & Bootstrap Icons -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="../assets/js/tailwind.config.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="../assets/css/main.css" />
+      <link rel="stylesheet" href="./assets/css/services.css" />
+   </head>
+   <body>
+      <!-- Header (Custom Element) -->
+      <website-header></website-header>
+
+      <!-- Main -->
+      <main>
+         <!-- Hero / Header -->
+         <section
+            id="hero"
+            class="hero hero--innerPage hero--homeRenovationPage"
+         >
+            <div class="container mx-auto py-[15vh] text-light">
+               <div
+                  class="flex flex-col items-center justify-center space-y-[1rem] mx-auto lg:min-h-[40vh] md:w-3/5"
+               >
+                  <h5 class="uppercase tracking-wider">
+                     our services /<span class="font-bold">
+                        Home Renovations</span
+                     >
+                  </h5>
+                  <h1
+                     class="font-extrabold text-4xl normal-case text-center lg:text-5xl"
+                  >
+                     Every home has a
+                     <span class="font-black text-orange">story</span>
+                     , but every
+                     <span class="font-black text-orange">renovation</span>
+                     is a new beginning
+                  </h1>
+               </div>
+            </div>
+         </section>
+
+         <!-- About Service -->
+         <section>
+            <div class="container mx-auto my-10 md:my-[100px]">
+               <div
+                  class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[50px] xl:gap-[150px]"
+               >
+                  <!-- Content -->
+                  <div class="content flex flex-col gap-5">
+                     <h2 class="text-4xl font-extrabold">
+                        Home <br />
+                        Renovation
+                     </h2>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nibh faucibus morbi commodo consequat amet orci, non,
+                        quisque proin. Vulputate in praesent venenatis
+                        scelerisque integer tincidunt quam eget tincidunt.
+                        Mattis consequat, consectetur scelerisque libero velit
+                        convallis velit integer nisl. Et nunc, egestas iaculis
+                        sem turpis pellentesque blandit. Sed pellentesque
+                        viverra ut gravida pharetra, vel. Suspendisse quisque
+                        pulvinar vel cursus maecenas urna. Vel donec suspendisse
+                        dictum tortor. Commodo mi posuere placerat in eget in
+                        pretium in. Tincidunt in adipiscing amet amet, sapien,
+                        dignissim vitae. Sit fringilla nunc varius aenean arcu.
+                        Erat facilisis quis molestie rhoncus duis facilisis. Et
+                        elit cras sapien pellentesque pellentesque maecenas
+                        tristique sit ullamcorper. Morbi a nibh quam
+                        pellentesque auctor egestas nullam pellentesque. Tellus
+                        condimentum platea ac magna sed egestas aliquam
+                        lobortis.
+                        <br /><br />
+                        Ipsum dolor mus vulputate nibh faucibus neque aliquam
+                        ornare. Vitae sagittis euismod faucibus posuere. Lacus,
+                        nibh amet sit leo vulputate feugiat ipsum dignissim
+                        diam. Velit viverra adipiscing non eget pretium tortor
+                        tristique purus id. Nec pretium nisl commodo enim,
+                        sapien in ipsum aliquam. Aliquet velit magna vitae sed
+                        pellentesque aenean fames eleifend.
+                     </p>
+
+                     <div class="flex flex-wrap gap-5 mt-5">
+                        <a
+                           href="#"
+                           class="btn btn-primary btn-orange btn-hover-dark text-light"
+                        >
+                           Book a free consultation
+                        </a>
+                        <a
+                           href="#"
+                           class="btn btn-secondary btn-orange btn-hover-dark text-light"
+                        >
+                           All Services <i class="bi bi-arrow-right"></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <!-- Form -->
+                  <div class="w-full h-full lg:min-w-[450px]">
+                     <form action="#" class="flex flex-col gap-5 bg-light p-5">
+                        <h4 class="font-semibold text-xl mb-2">
+                           Get a free quote
+                        </h4>
+                        <!-- Row -->
+                        <div class="grid lg:grid-cols-2 gap-4">
+                           <div class="form-group">
+                              <label
+                                 for="inputFirstName"
+                                 class="font-normal opacity-80"
+                                 >First Name</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputFirstName"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorFirstName"
+                              >
+                              </span>
+                           </div>
+                           <div class="form-group">
+                              <label
+                                 for="inputEmailAddress"
+                                 class="font-normal opacity-80"
+                                 >Email Address</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputEmailAddress"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorEmailAddress"
+                              >
+                              </span>
+                           </div>
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-4">
+                           <div class="form-group">
+                              <label
+                                 for="inputPhoneNumber"
+                                 class="font-normal opacity-80"
+                                 >Phone Number</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputPhoneNumber"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorPhoneNumber"
+                              >
+                              </span>
+                           </div>
+                           <div class="form-group">
+                              <label
+                                 for="inputSubject"
+                                 class="font-normal opacity-80"
+                                 >Subject</label
+                              >
+                              <input
+                                 type="text"
+                                 id="inputSubject"
+                                 class="form-control w-full p-2 border-2 focus:border-orange focus:outline-none"
+                              />
+                              <span
+                                 class="error text-red-500 text-sm"
+                                 id="errorSubject"
+                              >
+                              </span>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label
+                              for="inputMessage"
+                              class="font-normal opacity-80"
+                              >Message</label
+                           >
+                           <textarea
+                              id="inputMessage"
+                              class="form-control w-full p-2 border-2 resize-y focus:border-orange focus:outline-none"
+                              cols="30"
+                              rows="3"
+                           ></textarea>
+                           <span
+                              class="error text-red-500 text-sm"
+                              id="errorMessage"
+                           >
+                           </span>
+                        </div>
+                        <button
+                           class="btn btn-sm btn-primary btn-orange btn-hover-dark text-light"
+                        >
+                           <i class="bi bi-send"></i>
+                           <span>Send Now</span>
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Services Work -->
+         <section>
+            <div class="container mx-auto my-10 md:my-[100px]">
+               <div class="title mb-20 md:mb-[60px]">
+                  <h2
+                     class="font-extrabold capitalize text-center mb-2 text-3xl lg:text-4xl"
+                  >
+                     Our Recent work in
+                     <span class="text-orange block">“Home Renovation”</span>
+                  </h2>
+               </div>
+               <section class="container mx-auto">
+                  <!-- Flex Row of Gallery Images -->
+                  <p>Flex Row of Work Images</p>
+               </section>
+            </div>
+         </section>
+
+         <!-- Testimonials -->
+         <section>
+            <div class="container mx-auto my-10 md:my-[100px]">
+               <div class="title mb-20 md:mb-[100px]">
+                  <h3
+                     class="font-bold uppercase tracking-wider text-lg text-center text-orange mb-2"
+                  >
+                     Testimonials
+                  </h3>
+                  <h2
+                     class="font-extrabold capitalize text-center mx-auto mb-2 text-3xl lg:text-4xl max-w-[400px]"
+                  >
+                     What our customers say “About Us”
+                  </h2>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- Footer (Custom Element) -->
+      <website-footer></website-footer>
+
+      <!-- ========================================================= -->
+      <!-- Scripts -->
+      <!-- ========================================================= -->
+      <script type="module" src="../assets/js/includes.js"></script>
+      <script src="../assets/js/global.js"></script>
+      <script src="./assets/js/services.js"></script>
+      <script></script>
+   </body>
+</html>
