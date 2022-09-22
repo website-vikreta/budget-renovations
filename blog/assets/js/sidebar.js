@@ -31,37 +31,37 @@ class WebsiteBlogSidebar extends HTMLElement {
          
                <ul class="flex flex-col gap-3 mt-4">
                   <li class="flex items-start gap-2">
-                     <img src="" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-1.webp" class="w-20" alt="Blog Image" />
                      <div>
                         <h5 class="font-semibold text-sm">
-                           Lorem ipsum dolor sit amet, adipiscing elit.
+                           <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
                         </h5>
                         <p class="opacity-80 italic text-xs">15 Sept 2022</p>
                      </div>
                   </li>
                   <li class="flex items-start gap-2">
-                     <img src="" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-2.webp" class="w-20" alt="Blog Image" />
                      <div>
                         <h5 class="font-semibold text-sm">
-                           Lorem ipsum dolor sit amet, adipiscing elit.
+                           <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
                         </h5>
                         <p class="opacity-80 italic text-xs">15 Sept 2022</p>
                      </div>
                   </li>
                   <li class="flex items-start gap-2">
-                     <img src="" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-3.webp" class="w-20" alt="Blog Image" />
                      <div>
                         <h5 class="font-semibold text-sm">
-                           Lorem ipsum dolor sit amet, adipiscing elit.
+                           <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
                         </h5>
                         <p class="opacity-80 italic text-xs">15 Sept 2022</p>
                      </div>
                   </li>
                   <li class="flex items-start gap-2">
-                     <img src="" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-4.webp" class="w-20" alt="Blog Image" />
                      <div>
                         <h5 class="font-semibold text-sm">
-                           Lorem ipsum dolor sit amet, adipiscing elit.
+                           <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
                         </h5>
                         <p class="opacity-80 italic text-xs">15 Sept 2022</p>
                      </div>
