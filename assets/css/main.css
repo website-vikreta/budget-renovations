@@ -55,7 +55,7 @@ nav.fixed-top {
    left: 0;
    width: 100%;
    height: auto;
-   z-index: 1000;
+   z-index: 1000 !important;
 }
 nav .desktopNavMenu li a.active {
    background: var(--color-bluishDark);
@@ -170,6 +170,32 @@ nav .mobileNavMenu li a.active {
    color: var(--color-light);
 }
 
+/* line capping */
+.line-clamp {
+   --line-clamp: 3; /*default value*/
+
+   display: -webkit-box;
+   line-clamp: var(--line-clamp);
+   -webkit-line-clamp: var(--line-clamp);
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+.line-clamp.line-clamp-1 {
+   --line-clamp: 1;
+}
+.line-clamp.line-clamp-2 {
+   --line-clamp: 2;
+}
+.line-clamp.line-clamp-3 {
+   --line-clamp: 3;
+}
+.line-clamp.line-clamp-4 {
+   --line-clamp: 4;
+}
+.line-clamp.line-clamp-5 {
+   --line-clamp: 5;
+}
+
 /* Styling Contact Page */
 .contact-form-heading span {
    position: relative;
@@ -200,6 +226,93 @@ nav .mobileNavMenu li a.active {
 }
 @media screen and (max-width: 976px) {
    .aboutus .about-ourProcess::after {
+      display: none;
+   }
+}
+
+/* Home Page styling */
+/* styling hero nav buttons */
+.homePage .swiper-btn {
+   /* position: absolute; */
+   width: 40px;
+   aspect-ratio: 1;
+   display: grid;
+   place-content: center;
+   color: var(--color-light);
+   cursor: pointer;
+   font-size: 1.5rem;
+   transition: 0.5s ease-out;
+
+   --btn-color: var(--color-dark);
+}
+.homePage .swiper-btn.swiper-btn-next {
+   --btn-color: var(--color-orange);
+   background-color: var(--btn-color);
+   border: 1px solid var(--btn-color);
+}
+.homePage .swiper-btn.swiper-btn-next:hover {
+   background: var(--color-light);
+   color: var(--color-dark);
+}
+.homePage .swiper-btn.swiper-btn-prev {
+   background-color: var(--btn-color);
+   border: 1px solid var(--btn-color);
+}
+.homePage .swiper-btn.swiper-btn-prev:hover {
+   background: var(--color-light);
+   color: var(--color-dark);
+}
+@media screen and (min-width: 768px) {
+   .homePage .swiper-btn {
+      width: 45px;
+      font-size: 1.7;
+   }
+}
+
+.homePage .hero-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   position: relative;
+   gap: 2rem;
+}
+.homePage .hero-wrapper .swiper-wrapper {
+   width: 60%;
+}
+.homePage .hero-wrapper .swiper-wrapper::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(
+      89.95deg,
+      #f4f8fb 0.05%,
+      rgba(244, 248, 251, 0) 57.99%
+   );
+   pointer-events: none;
+   z-index: 1;
+}
+.homePage .hero-wrapper .content {
+   width: 60%;
+   position: absolute;
+   left: 0;
+   z-index: 10;
+}
+@media screen and (max-width: 976px) {
+   .homePage .hero-wrapper {
+      flex-direction: column;
+      gap: 3rem;
+   }
+   .homePage .hero-wrapper .content {
+      position: relative;
+      width: 100%;
+   }
+   .homePage .hero-wrapper .swiper-wrapper {
+      width: 100%;
+   }
+   .homePage .hero-wrapper .swiper-wrapper::after {
       display: none;
    }
 }

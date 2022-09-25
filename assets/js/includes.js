@@ -169,7 +169,7 @@ class WebsiteHeader extends HTMLElement {
                      <div class="md:hidden">
                         <ul
                            id="mobileNavMenu"
-                           class="mainNavMenu mobileNavMenu absolute hidden flex-col gap-4 items-center self-end p-10 mt-10 sm:w-auto sm:self-center drop-shadow-lg bg-light text-bluishDark left-5 right-5 top-[4rem]"
+                           class="mainNavMenu mobileNavMenu absolute z-20 hidden flex-col gap-4 items-center self-end p-10 mt-10 sm:w-auto sm:self-center drop-shadow-lg bg-light text-bluishDark left-5 right-5 top-[4rem]"
                         >
                            <li>
                               <a

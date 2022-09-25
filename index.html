@@ -35,77 +35,639 @@
 
       <!-- SEO -->
       <title>Home | Budget Renovations</title>
-      <meta content="" name="description" />
-      <meta content="" name="keywords" />
+      <meta content="Dummy Description" name="description" />
+      <meta content="keyword 1, keyword 2" name="keywords" />
 
-      <!-- Tailwind -->
+      <!-- Tailwind & Bootstrap Icons -->
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="./assets/js/tailwind.config.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      />
+
+      <!-- Swiper Js -->
+      <link
+         rel="stylesheet"
+         href="./assets/vendor/swiperjs/swiper-bundle.min.css"
+      />
 
       <!-- CSS -->
       <link rel="stylesheet" href="./assets/css/main.css" />
    </head>
-   <body>
+   <body class="homePage">
       <!-- Header -->
-      <header></header>
+      <website-header></website-header>
 
       <!-- Main -->
       <main>
-         <div class="container mx-auto py-10">
-            <h2 class="font-bold text-4xl mb-10">Pages Completed</h2>
+         <!-- Hero Of the Page -->
+         <section class="hero bg-light" id="hero">
+            <div class="container mx-auto py-20 md:py-[100px]">
+               <div class="hero-wrapper">
+                  <!-- Content -->
+                  <div class="content">
+                     <h1 class="text-4xl font-black md:text-5xl xl:text-6xl">
+                        We fix all your <br class="hidden lg:block" />
+                        renovations problems
+                     </h1>
+                     <p class="mt-3 lg:mt-7 opacity-90 lg:w-4/5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cursus nunc ornare at nisl ut justo dui, volutpat purus.
+                        Faucibus amet iaculis tincidunt dictum.
+                     </p>
 
-            <div>
-               <a
-                  class="underline hover:text-orange focus:outline-none"
-                  href="./about.html"
-                  >About Us Page</a
-               >
+                     <div
+                        class="flex gap-5 flex-wrap items-center mt-5 lg:mt-10"
+                     >
+                        <a
+                           href="./contact.html"
+                           class="btn btn-primary btn-orange btn-hover-dark text-light"
+                        >
+                           <i class="bi bi-send"></i>
+                           <span>Send Us a Message</span>
+                        </a>
+                        <a
+                           href="@"
+                           class="btn btn-secondary btn-dark btn-hover-dark"
+                        >
+                           <span>Learn More</span>
+                        </a>
+                     </div>
+                  </div>
+                  <!-- Slider -->
+                  <div class="relative swiper-wrapper">
+                     <div class="swiper relative">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                           <!-- Slides -->
+                           <div class="swiper-slide">
+                              <img
+                                 src="./assets/img/home-hero/hero-img-1.webp"
+                                 alt="Hero Image 1"
+                              />
+                           </div>
+                           <div class="swiper-slide">
+                              <img
+                                 src="./assets/img/home-hero/hero-img-2.webp"
+                                 alt="Hero Image 2"
+                              />
+                           </div>
+                           <div class="swiper-slide">
+                              <img
+                                 src="./assets/img/home-hero/hero-img-3.webp"
+                                 alt="Hero Image 3"
+                              />
+                           </div>
+                        </div>
+                     </div>
+                     <!-- If we need navigation buttons -->
+                     <div
+                        class="absolute z-20 top-full right-[4vw] translate-y-[-50%] flex gap-1 md:gap-2"
+                     >
+                        <div class="swiper-btn swiper-btn-prev">
+                           <i class="bi bi-arrow-left-short"></i>
+                        </div>
+                        <div class="swiper-btn swiper-btn-next">
+                           <i class="bi bi-arrow-right-short"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div>
-               <a
-                  class="underline hover:text-orange focus:outline-none"
-                  href="./services/index.html"
-                  >Service Page</a
+         </section>
+
+         <!-- Why Us -->
+         <section>
+            <div
+               class="container mx-auto my-[80px] md:my-[100px] lg:my-[150px]"
+            >
+               <div
+                  class="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-[50px] xl:gap-[150px]"
                >
+                  <!-- Content -->
+                  <div class="content w-full">
+                     <div class="flex flex-col gap-2">
+                        <h2 class="text-4xl font-extrabold">Why Us?</h2>
+                        <p class="md:text-lg md:leading-tight opacity-80">
+                           We specialize in quality home renovations and
+                           <br />
+                           custom home building.
+                        </p>
+                     </div>
+
+                     <!-- grid -->
+                     <div
+                        class="grid grid-cols-2 gap-10 mt-10 lg:mt-[3rem] lg:gap-y-9"
+                     >
+                        <div class="card flex flex-col gap-2">
+                           <img
+                              src="./assets/img/why-us/24-7-availability.svg"
+                              alt="24/7 Availability"
+                              class="max-h-[40px] w-fit mb-3 lg:max-h-[40px]"
+                           />
+                           <h3 class="font-bold text-xl">24/7 Availability</h3>
+                           <p class="opacity-80">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. In pulvinar nullam sed eget lectus nibh
+                              nunc, quam.
+                           </p>
+                        </div>
+                        <div class="card flex flex-col gap-2">
+                           <img
+                              src="./assets/img/why-us/genius-workers.svg"
+                              alt="24/7 Availability"
+                              class="max-h-[40px] w-fit mb-3 lg:max-h-[40px]"
+                           />
+                           <h3 class="font-bold text-xl">Genius Workers</h3>
+                           <p class="opacity-80">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. In pulvinar nullam sed eget lectus nibh
+                              nunc, quam.
+                           </p>
+                        </div>
+                        <div class="card flex flex-col gap-2">
+                           <img
+                              src="./assets/img/why-us/low-pricing.svg"
+                              alt="24/7 Availability"
+                              class="max-h-[40px] w-fit mb-3 lg:max-h-[40px]"
+                           />
+                           <h3 class="font-bold text-xl">Low Pricing</h3>
+                           <p class="opacity-80">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. In pulvinar nullam sed eget lectus nibh
+                              nunc, quam.
+                           </p>
+                        </div>
+                        <div class="card flex flex-col gap-2">
+                           <img
+                              src="./assets/img/why-us/free-estimation.svg"
+                              alt="24/7 Availability"
+                              class="max-h-[40px] w-fit mb-3 lg:max-h-[40px]"
+                           />
+                           <h3 class="font-bold text-xl">Free Estimation</h3>
+                           <p class="opacity-80">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. In pulvinar nullam sed eget lectus nibh
+                              nunc, quam.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Form -->
+                  <website-contact-form
+                     class="w-full lg:w-auto"
+                  ></website-contact-form>
+               </div>
             </div>
-            <div>
-               <a
-                  class="underline hover:text-orange focus:outline-none"
-                  href="./services/home-renovation.html"
-                  >Single Service Page</a
+         </section>
+
+         <!-- Services -->
+         <section class="services" id="services">
+            <div class="container mx-auto my-20 md:my-[100px] lg:my-[150px]">
+               <!-- Title -->
+               <div class="title">
+                  <h2
+                     class="font-extrabold capitalize text-center mb-2 text-3xl lg:text-4xl"
+                  >
+                     Our Services
+                  </h2>
+                  <p
+                     class="text-center max-w-[300px] mx-auto md:text-lg md:leading-tight opacity-80 md:max-w-[400px]"
+                  >
+                     We specialize in quality home renovations and custom home
+                     building.
+                  </p>
+               </div>
+
+               <!-- Services Grid -->
+               <div
+                  class="grid grid-cols-2 gap-5 md:grid-cols-3 xl:grid-cols-4 my-20 md:my-[80px]"
                >
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/home-renovation.svg"
+                        alt="Home Renovation"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Home Renovation
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/bathroom.svg"
+                        alt="Bathroom & Shower Renovation"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Bathroom & Shower Renovation
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/kitchen.svg"
+                        alt="Home Renovation"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Kitchen Renovation
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/toilet.svg"
+                        alt="Toilet Renovation"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Toilet Renovation
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/laundry.svg"
+                        alt="Laundry Renovation"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Loundry Renovation
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/window.svg"
+                        alt="Window/Door Replacement"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Window/Door Replacement
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/landscaping.svg"
+                        alt="Home Renovation"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Landscaping work Fencing
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+                  <div
+                     class="card bg-light p-5 lg:p-8 xl:p-10 flex flex-col gap-5"
+                  >
+                     <img
+                        src="./services/assets/img/service-icons/pergola.svg"
+                        alt="Decking & Pargolas"
+                        class="max-w-[70px] md:max-w-[80px]"
+                     />
+                     <div class="flex-1">
+                        <h4 class="leading-tight font-extrabold text-lg">
+                           Decking & Pargolas
+                        </h4>
+                        <p class="mt-2 line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing
+                           elit. Quisquam quasi voluptate, debitis voluptates
+                           maiores quidem voluptatibus consequatur
+                        </p>
+                     </div>
+                     <a
+                        href="./services/home-renovation.html"
+                        class="font-medium text-md text-orange hover:underline"
+                     >
+                        Learn More
+                        <span class="bi bi-arrow-right"></span>
+                     </a>
+                  </div>
+               </div>
+
+               <!-- Buttons -->
+               <div class="flex justify-center gap-3 flex-wrap">
+                  <a
+                     href="./contact.html"
+                     class="btn btn-primary btn-orange btn-hover-dark text-light"
+                  >
+                     <i class="bi bi-send"></i>
+                     <span>Send a Free Quote</span>
+                  </a>
+                  <a
+                     href="./services/index.html"
+                     class="btn btn-secondary btn-dark btn-hover-orange"
+                  >
+                     Learn More
+                  </a>
+               </div>
             </div>
-            <div>
-               <a
-                  class="underline hover:text-orange focus:outline-none"
-                  href="./contact.html"
-                  >Contact Page</a
+         </section>
+
+         <!-- CTA Flag -->
+         <section>
+            <div class="container mx-auto my-20 md:my-[100px] lg:my-[150px]">
+               <div
+                  class="cta-wrapper relative bg-orange text-light p-10 min-h-[250px] grid place-content-center"
                >
+                  <!-- Image -->
+                  <div
+                     class="hidden lg:block absolute overflow-hidden z-10 top-0 left-0 h-full w-2/6"
+                  >
+                     <img
+                        src="./assets/img/cta-img.webp"
+                        alt=""
+                        class="w-auto h-full"
+                        style="
+                           clip-path: polygon(
+                              0 0,
+                              100% 0,
+                              90% 50%,
+                              100% 100%,
+                              0 100%
+                           );
+                        "
+                     />
+                  </div>
+                  <div
+                     class="content w-full lg:w-4/6 lg:ml-auto flex flex-wrap justify-between md:flex-nowrap gap-10 lg:pl-10"
+                  >
+                     <!-- CTA -->
+                     <div class="flex flex-col gap-3">
+                        <h4 class="font-extrabold text-2xl">
+                           Talk to our consultant
+                        </h4>
+                        <p class="line-clamp">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing
+                           elit. Egestas eu nec ultricies in tristique eros.
+                           Commodo pellentesque mauris at nisi.
+                        </p>
+                        <a
+                           href="./contact.html"
+                           class="btn btn-secondary btn-light btn-hover-dark mt-2"
+                        >
+                           Send Us a Message
+                        </a>
+                     </div>
+
+                     <!-- Follow -->
+                     <div class="flex flex-col gap-5 lg:mr-20">
+                        <h4 class="font-bold text-xl">More of Us :)</h4>
+                        <hr
+                           class="h-px border-none bg-gradient-to-r from-light w-1/2 md:w-[100%]"
+                        />
+                        <div class="flex space-x-3">
+                           <a
+                              href="#"
+                              class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#C13584] hover:text-light"
+                              title="Follow on Instagram"
+                              ><i class="bi bi-instagram"></i
+                           ></a>
+                           <a
+                              href="#"
+                              class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#4267B2] hover:text-light"
+                              title="Follow on Facebook"
+                              ><i class="bi bi-facebook"></i
+                           ></a>
+                           <a
+                              href="#"
+                              class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#1DA1F2] hover:text-light"
+                              title="Follow on Twitter"
+                              ><i class="bi bi-twitter"></i
+                           ></a>
+                           <a
+                              href="#"
+                              class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#0077b5] hover:text-light"
+                              title="Follow on Linkedin"
+                              ><i class="bi bi-linkedin"></i
+                           ></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div>
-               <a
-                  class="underline hover:text-orange focus:outline-none"
-                  href="./blog/index.html"
-                  >Blog Home Page</a
-               >
+         </section>
+
+         <!-- Our Latest Work -->
+         <section>
+            <div class="container mx-auto my-20 md:my-[100px] lg:my-[150px]">
+               <div class="grid lg:grid-cols-2 gap-10 lg:gap-20">
+                  <!-- Content -->
+                  <div
+                     class="content flex flex-col gap-2 h-fit lg:sticky top-[150px] xl:relative xl:top-0"
+                  >
+                     <div class="flex flex-col gap-2">
+                        <h2 class="text-4xl font-extrabold">Our Latest Work</h2>
+                        <p
+                           class="md:text-lg md:leading-tight md:w-[80%] opacity-80"
+                        >
+                           Claritas est etiam processus dynamicus, qui sequitur
+                           mutationem consuetudium lectorum.
+                        </p>
+                     </div>
+                     <p class="mt-10">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ipsum nunc metus fusce eu est mattis urna, quam. Vel
+                        dignissim lorem mauris dolor eu. Adipiscing id sed
+                        nullam vel pellentesque. Etiam turpis volutpat nec
+                        dolor.
+                     </p>
+                     <p>
+                        Tellus, egestas in at tellus nullam tellus nulla. Vel in
+                        purus, urna molestie fringilla dapibus feugiat amet
+                        nulla. Malesuada aliquet risus augue egestas posuere.
+                        Ultricies ac cras justo, in elementum. Pellentesque
+                        rhoncus eget fringilla ut feugiat quis purus feugiat.
+                        Accumsan eget massa nisi, vel sed consequat. Neque eget
+                        ut lorem risus bibendum egestas. Lobortis sollicitudin
+                        eros vulputate id.
+                     </p>
+                     <a
+                        href="#"
+                        class="btn btn-primary btn-orange btn-hover-dark text-light mt-5"
+                     >
+                        <i class="bi bi-arrow-up-right-circle"></i>
+                        <span>Check More of Our Work</span>
+                     </a>
+                  </div>
+
+                  <!-- Image Grid -->
+                  <div
+                     class="grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-2"
+                  >
+                     <div>
+                        <img
+                           class="w-full"
+                           src="./assets/img/home-hero/hero-img-1.webp"
+                           alt=""
+                        />
+                     </div>
+                     <div>
+                        <img
+                           class="w-full"
+                           src="./assets/img/home-hero/hero-img-2.webp"
+                           alt=""
+                        />
+                     </div>
+                     <div>
+                        <img
+                           class="w-full"
+                           src="./assets/img/home-hero/hero-img-3.webp"
+                           alt=""
+                        />
+                     </div>
+                     <div>
+                        <img
+                           class="w-full"
+                           src="./assets/img/home-hero/hero-img-1.webp"
+                           alt=""
+                        />
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div>
-               <a
-                  class="underline hover:text-orange focus:outline-none"
-                  href="./blog/one-blog-article.html"
-                  >Single Blog Page</a
-               >
+         </section>
+
+         <!-- Testimonials -->
+         <section>
+            <div class="container mx-auto my-10 md:my-[100px]">
+               <div class="title mb-20 md:mb-[100px]">
+                  <h3
+                     class="font-bold uppercase tracking-wider text-lg text-center text-orange mb-2"
+                  >
+                     Testimonials
+                  </h3>
+                  <h2
+                     class="font-extrabold capitalize text-center mx-auto mb-2 text-3xl lg:text-4xl max-w-[400px]"
+                  >
+                     What our customers say “About Us”
+                  </h2>
+               </div>
             </div>
-         </div>
+         </section>
       </main>
 
       <!-- Footer -->
-      <footer></footer>
+      <website-footer></website-footer>
 
       <!-- ========================================================= -->
       <!-- Scripts -->
       <!-- ========================================================= -->
+      <script type="module" src="./assets/js/includes.js"></script>
+      <script src="./assets/js/inner-contact-form.js"></script>
+      <script src="./assets/vendor/swiperjs/swiper-bundle.min.js"></script>
       <script src="./assets/js/global.js"></script>
+      <script src="./assets/js/main.js"></script>
       <script></script>
    </body>
 </html>
