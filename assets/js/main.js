@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiperHero = new Swiper('.home-hero-swiper', {
    // Optional parameters
    loop: true,
    speed: 2000,
@@ -11,5 +11,5 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.hero .swiper-btn-next',
       prevEl: '.hero .swiper-btn-prev',
    },
-
 });
+

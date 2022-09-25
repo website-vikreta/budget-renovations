@@ -232,7 +232,7 @@ nav .mobileNavMenu li a.active {
 
 /* Home Page styling */
 /* styling hero nav buttons */
-.homePage .swiper-btn {
+.swiper-btn {
    /* position: absolute; */
    width: 40px;
    aspect-ratio: 1;
@@ -245,25 +245,25 @@ nav .mobileNavMenu li a.active {
 
    --btn-color: var(--color-dark);
 }
-.homePage .swiper-btn.swiper-btn-next {
+.swiper-btn.swiper-btn-next {
    --btn-color: var(--color-orange);
    background-color: var(--btn-color);
    border: 1px solid var(--btn-color);
 }
-.homePage .swiper-btn.swiper-btn-next:hover {
+.swiper-btn.swiper-btn-next:hover {
    background: var(--color-light);
    color: var(--color-dark);
 }
-.homePage .swiper-btn.swiper-btn-prev {
+.swiper-btn.swiper-btn-prev {
    background-color: var(--btn-color);
    border: 1px solid var(--btn-color);
 }
-.homePage .swiper-btn.swiper-btn-prev:hover {
+.swiper-btn.swiper-btn-prev:hover {
    background: var(--color-light);
    color: var(--color-dark);
 }
 @media screen and (min-width: 768px) {
-   .homePage .swiper-btn {
+   .swiper-btn {
       width: 45px;
       font-size: 1.7;
    }
