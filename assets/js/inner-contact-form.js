@@ -98,7 +98,7 @@ class WebsiteContactForm extends HTMLElement {
                   </span>
                </div>
                <button
-                  class="btn btn-sm btn-primary btn-orange btn-hover-dark text-light"
+                  class="btn btn-sm btn-primary btn-orange btn-hover-dark text-white"
                >
                   <i class="bi bi-send"></i>
                   <span>Send Now</span>

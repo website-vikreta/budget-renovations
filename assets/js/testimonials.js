@@ -35,9 +35,9 @@ class WebsiteTestimonials extends HTMLElement {
                               recusandae et ut laudantium facilis.
                            </p>
                            <div>
-                              <h6 class="font-black leading-none">
+                              <h4 class="font-black leading-none">
                                  Doctor Strange
-                              </h6>
+                              </h4>
                               <i class="text-sm opacity-80">
                                  caretaker at <b>Kamartaj</b>
                               </i>
@@ -57,7 +57,7 @@ class WebsiteTestimonials extends HTMLElement {
                               explicabo et.
                            </p>
                            <div>
-                              <h6 class="font-black leading-none">She Hulk</h6>
+                              <h4 class="font-black leading-none">She Hulk</h4>
                               <i class="text-sm opacity-80">
                                  attorney at <b>Law</b>
                               </i>
@@ -77,9 +77,9 @@ class WebsiteTestimonials extends HTMLElement {
                               recusandae et ut laudantium facilis.
                            </p>
                            <div>
-                              <h6 class="font-black leading-none">
+                              <h4 class="font-black leading-none">
                                  Tony Stark
-                              </h6>
+                              </h4>
                               <i class="text-sm opacity-80">
                                  Founder of <b>Stark Industries</b>
                               </i>
@@ -99,9 +99,9 @@ class WebsiteTestimonials extends HTMLElement {
                               recusandae et ut laudantium facilis.
                            </p>
                            <div>
-                              <h6 class="font-black leading-none">
+                              <h4 class="font-black leading-none">
                                  Shubham Gujarathi
-                              </h6>
+                              </h4>
                               <i class="text-sm opacity-80"> Young Citizen </i>
                            </div>
                         </div>
