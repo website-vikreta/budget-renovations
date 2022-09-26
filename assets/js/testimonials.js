@@ -4,11 +4,11 @@ class WebsiteTestimonials extends HTMLElement {
          <section>
             <div class="container mx-auto my-10 md:my-[100px]">
                <div class="title mb-10">
-                  <h3
+                  <p
                      class="font-bold uppercase tracking-wider text-lg text-center text-orange mb-2"
                   >
                      Testimonials
-                  </h3>
+                  </p>
                   <h2
                      class="font-extrabold capitalize text-center mx-auto mb-2 text-3xl lg:text-4xl max-w-[400px]"
                   >
@@ -35,9 +35,9 @@ class WebsiteTestimonials extends HTMLElement {
                               recusandae et ut laudantium facilis.
                            </p>
                            <div>
-                              <h4 class="font-black leading-none">
+                              <p class="font-black leading-none">
                                  Doctor Strange
-                              </h4>
+                              </p>
                               <i class="text-sm opacity-80">
                                  caretaker at <b>Kamartaj</b>
                               </i>
@@ -57,7 +57,7 @@ class WebsiteTestimonials extends HTMLElement {
                               explicabo et.
                            </p>
                            <div>
-                              <h4 class="font-black leading-none">She Hulk</h4>
+                              <p class="font-black leading-none">She Hulk</p>
                               <i class="text-sm opacity-80">
                                  attorney at <b>Law</b>
                               </i>
@@ -77,9 +77,9 @@ class WebsiteTestimonials extends HTMLElement {
                               recusandae et ut laudantium facilis.
                            </p>
                            <div>
-                              <h4 class="font-black leading-none">
+                              <p class="font-black leading-none">
                                  Tony Stark
-                              </h4>
+                              </p>
                               <i class="text-sm opacity-80">
                                  Founder of <b>Stark Industries</b>
                               </i>
@@ -99,9 +99,9 @@ class WebsiteTestimonials extends HTMLElement {
                               recusandae et ut laudantium facilis.
                            </p>
                            <div>
-                              <h4 class="font-black leading-none">
+                              <p class="font-black leading-none">
                                  Shubham Gujarathi
-                              </h4>
+                              </p>
                               <i class="text-sm opacity-80"> Young Citizen </i>
                            </div>
                         </div>
