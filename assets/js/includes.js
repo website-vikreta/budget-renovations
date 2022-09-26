@@ -106,6 +106,8 @@ class WebsiteHeader extends HTMLElement {
                                  src="${prependURLString}assets/img/budget-renovation-logo.svg"
                                  alt="Budget Renovations Logo"
                                  class="w-[120px] lg:w-[160px]"
+                                 width="1280"
+                                 height="720"
                               />
                            </a>
                         </div>
@@ -352,6 +354,9 @@ class WebsiteFooter extends HTMLElement {
                   <img
                      src="${prependURLString}assets/img/budget-renovation-logo.svg"
                      alt="Budget Renovation Logo"
+                     width="1280"
+                     height="720"
+                     class="aspect-video"
                   />
                </div>
                <div
