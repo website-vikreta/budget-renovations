@@ -312,24 +312,28 @@ class WebsiteFooter extends HTMLElement {
                            href="#"
                            class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#C13584] hover:text-light"
                            title="Follow on Instagram"
+                           rel="nofollow"
                            ><i class="bi bi-instagram"></i
                         ></a>
                         <a
                            href="#"
                            class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#4267B2] hover:text-light"
                            title="Follow on Facebook"
+                           rel="nofollow"
                            ><i class="bi bi-facebook"></i
                         ></a>
                         <a
                            href="#"
                            class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#1DA1F2] hover:text-light"
                            title="Follow on Twitter"
+                           rel="nofollow"
                            ><i class="bi bi-twitter"></i
                         ></a>
                         <a
                            href="#"
                            class="bg-light text-bluishDark w-8 h-8 grid place-content-center rounded-md transition ease-out duration-300 hover:bg-orange hover:bg-[#0077b5] hover:text-light"
                            title="Follow on Linkedin"
+                           rel="nofollow"
                            ><i class="bi bi-linkedin"></i
                         ></a>
                      </div>
