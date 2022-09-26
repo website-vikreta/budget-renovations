@@ -3,9 +3,9 @@ class WebsiteContactForm extends HTMLElement {
       this.innerHTML = `
          <div class="w-full h-full lg:min-w-[400px] xl:min-w-[500px]">
             <form action="#" class="flex flex-col gap-5 bg-light p-5">
-               <h4 class="font-semibold text-xl mb-2">
+               <h3 class="font-semibold text-xl mb-2">
                   Get a free quote
-               </h4>
+               </h3>
                <!-- Row -->
                <div class="grid lg:grid-cols-2 gap-4">
                   <div class="form-group">
