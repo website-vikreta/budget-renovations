@@ -30,6 +30,11 @@ h6 {
    line-height: auto;
 }
 
+img {
+   width: 100%;
+   height: auto;
+}
+
 /* resets */
 .container {
    padding-inline: 20px;
