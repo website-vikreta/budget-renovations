@@ -477,7 +477,7 @@ class WebsiteFooter extends HTMLElement {
                      Designed & Developed by
                      <a
                         href="https://www.websitevikreta.com/"
-                        class="font-bold text-orange hover:underline"
+                        class="font-bold hover:text-orange hover:underline"
                         target="_BLANK"
                         >Website Vikreta</a
                      >
