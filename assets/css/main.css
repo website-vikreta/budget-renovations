@@ -5,7 +5,8 @@
 }
 :root {
    --color-bluishDark: rgb(3, 53, 81);
-   --color-orange: rgb(211, 88, 39);
+   /* --color-orange: rgb(211, 88, 39); */
+   --color-orange: rgb(199, 82, 36);
    --color-dark: #022031;
    --color-light: #f4f8fb;
    --color-white: #ffffff;

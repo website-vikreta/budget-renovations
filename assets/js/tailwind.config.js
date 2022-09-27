@@ -14,7 +14,7 @@ tailwind.config = {
          colors: {
             // Branding
             bluishDark: "#033551",
-            orange: "#D35827",
+            orange: "#C75224",
             // Supporting Font
             dark: "#022031",
             light: "#F4F8FB",
