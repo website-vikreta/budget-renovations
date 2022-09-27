@@ -26,15 +26,26 @@
       <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
 
       <!-- Google Fonts -->
+      <link rel="DNS-prefetch" href="//fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
+         rel="preload"
          href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
-         rel="stylesheet"
+         as="style"
+         onload="this.onload=null;this.rel='stylesheet'"
       />
+      <noscript>
+         <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+         />
+      </noscript>
 
       <!-- SEO -->
-      <title>Our Services</title>
+      <title>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit shubha
+      </title>
       <meta content="Dummy Description" name="description" />
       <meta content="keyword 1, keyword 2" name="keywords" />
 
@@ -42,9 +53,17 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="../assets/js/tailwind.config.js"></script>
       <link
-         rel="stylesheet"
+         rel="preload"
          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+         as="style"
+         onload="this.onload=null;this.rel='stylesheet'"
       />
+      <noscript>
+         <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+         />
+      </noscript>
 
       <!-- CSS -->
       <link rel="stylesheet" href="../assets/css/main.css" />
@@ -77,7 +96,7 @@
 
          <!-- Blog Content -->
          <section class="blog" id="blog">
-            <div class="container mx-auto my-10 md:my-[50px]">
+            <div class="container mx-auto my-10 md:mt-[50px] md:mb-[100px]">
                <div class="flex flex-wrap gap-5 lg:gap-10 lg:flex-nowrap">
                   <div class="w-full">
                      <!-- Thumbnail -->
@@ -85,7 +104,10 @@
                         src="./assets/img/blog-article-1-img.webp"
                         alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit
                      shubha"
-                        class="w-full h-auto"
+                        class="w-full h-auto aspect-video"
+                        width="1280"
+                        height="720"
+                        loading="lazy"
                      />
                      <p class="italic text-right opacity-80 my-3">
                         written by -
@@ -136,7 +158,7 @@
                            adipiscing sed. Tempor nulla curabitur in porta vitae
                            tortor turpis ultrices vitae. Nunc sit auctor
                            praesent id lectus
-                           <a href="">penatibus vulputate praesent</a>. Et
+                           <a href="#">penatibus vulputate praesent</a>. Et
                            quisque lectus ante mattis nulla egestas. Neque et
                            gravida odio morbi diam vulputate consectetur
                            tincidunt senectus. Ullamcorper adipiscing id
@@ -159,21 +181,25 @@
 
                      <!-- Related Posts -->
                      <div>
-                        <h3
+                        <h2
                            class="mt-10 mb-7 font-extrabold text-center capitalize text-3xl"
                         >
                            Related Posts
-                        </h3>
+                        </h2>
                         <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
                            <div class="flex flex-col gap-3">
                               <img
                                  src="./assets/img/blog-article-1-img.webp"
-                                 alt=""
+                                 alt="Blog Thumbnail"
+                                 width="1280"
+                                 height="720"
+                                 class="aspect-video"
+                                 loading="lazy"
                               />
-                              <h4 class="font-bold text-lg leading-6">
+                              <h3 class="font-bold text-lg leading-6">
                                  Lorem ipsum dolor sit amet, consectetur
                                  adipiscing elit shubha
-                              </h4>
+                              </h3>
                               <p class="opacity-80">
                                  Lorem ipsum dolor sit amet, consectetur
                                  adipiscing elit. Congue in molestie sed in
@@ -193,13 +219,17 @@
                            <div class="flex flex-col gap-3">
                               <img
                                  src="./assets/img/blog-hero-img.webp"
-                                 alt=""
+                                 alt="Blog Thumbnail"
+                                 width="1280"
+                                 height="720"
+                                 class="aspect-video"
+                                 loading="lazy"
                               />
-                              <h4 class="font-bold text-lg leading-6">
+                              <h3 class="font-bold text-lg leading-6">
                                  Lorem ipsum dolor sit amet, consectetur
                                  adipiscing elit shubha amet, consectetur
                                  adipiscing elit shubha
-                              </h4>
+                              </h3>
                               <p class="opacity-80">
                                  Lorem ipsum dolor sit amet, consectetur
                                  adipiscing elit. Congue in molestie sed in

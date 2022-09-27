@@ -31,7 +31,7 @@ class WebsiteBlogSidebar extends HTMLElement {
          
                <ul class="flex flex-col gap-3 mt-4">
                   <li class="flex items-start gap-2">
-                     <img src="./assets/img/blog-thumbnail-1.webp" class="w-20" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-1.webp" class="w-20" alt="Blog Image" class="aspect-video" width="1280" height="720" loading="lazy" />
                      <div>
                         <h5 class="font-semibold text-sm">
                            <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
@@ -40,7 +40,7 @@ class WebsiteBlogSidebar extends HTMLElement {
                      </div>
                   </li>
                   <li class="flex items-start gap-2">
-                     <img src="./assets/img/blog-thumbnail-2.webp" class="w-20" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-2.webp" class="w-20" alt="Blog Image" class="aspect-video" width="1280" height="720" loading="lazy" />
                      <div>
                         <h5 class="font-semibold text-sm">
                            <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
@@ -49,7 +49,7 @@ class WebsiteBlogSidebar extends HTMLElement {
                      </div>
                   </li>
                   <li class="flex items-start gap-2">
-                     <img src="./assets/img/blog-thumbnail-3.webp" class="w-20" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-3.webp" class="w-20" alt="Blog Image" class="aspect-video" width="1280" height="720" loading="lazy" />
                      <div>
                         <h5 class="font-semibold text-sm">
                            <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
@@ -58,7 +58,7 @@ class WebsiteBlogSidebar extends HTMLElement {
                      </div>
                   </li>
                   <li class="flex items-start gap-2">
-                     <img src="./assets/img/blog-thumbnail-4.webp" class="w-20" alt="Blog Image" />
+                     <img src="./assets/img/blog-thumbnail-4.webp" class="w-20" alt="Blog Image" class="aspect-video" width="1280" height="720" loading="lazy" />
                      <div>
                         <h5 class="font-semibold text-sm">
                            <a href="#" class="hover:text-orange">Lorem ipsum dolor sit amet, adipiscing elit.</a>
