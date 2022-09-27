@@ -26,15 +26,24 @@
       <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
 
       <!-- Google Fonts -->
+      <link rel="DNS-prefetch" href="//fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
+         rel="preload"
          href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
-         rel="stylesheet"
+         as="style"
+         onload="this.onload=null;this.rel='stylesheet'"
       />
+      <noscript>
+         <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+         />
+      </noscript>
 
       <!-- SEO -->
-      <title>Our Services</title>
+      <title>Blog</title>
       <meta content="Dummy Description" name="description" />
       <meta content="keyword 1, keyword 2" name="keywords" />
 
@@ -42,9 +51,17 @@
       <script src="https://cdn.tailwindcss.com"></script>
       <script src="../assets/js/tailwind.config.js"></script>
       <link
-         rel="stylesheet"
+         rel="preload"
          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+         as="style"
+         onload="this.onload=null;this.rel='stylesheet'"
       />
+      <noscript>
+         <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+         />
+      </noscript>
 
       <!-- CSS -->
       <link rel="stylesheet" href="../assets/css/main.css" />
@@ -89,14 +106,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-1.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
@@ -115,14 +136,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-2.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha amet, shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
@@ -141,14 +166,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-3.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha amet, shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
@@ -167,14 +196,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-4.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha amet, shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
@@ -193,14 +226,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-5.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha amet, shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
@@ -219,14 +256,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-6.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha amet, shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
@@ -245,14 +286,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-7.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha amet, shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
@@ -271,14 +316,18 @@
                         <div class="flex flex-col gap-3 blog-card">
                            <img
                               src="./assets/img/blog-thumbnail-8.webp"
-                              alt=""
+                              alt="Blog Thumbnail"
+                              width="1280"
+                              height="720"
+                              class="aspect-video"
+                              loading="lazy"
                            />
-                           <h4
+                           <h3
                               class="font-bold text-md leading-5 lg:text-lg lg:leading-6"
                            >
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit shubha amet, shubha
-                           </h4>
+                           </h3>
                            <p class="text-sm opacity-80 md:text-md">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Congue in molestie sed in posuere nisi
