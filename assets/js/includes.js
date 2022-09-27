@@ -290,7 +290,7 @@ class WebsiteFooter extends HTMLElement {
                >
                   <!-- cta to contact -->
                   <div class="flex flex-col gap-3">
-                     <h3 class="font-bold text-2xl">Get your free consultation</h3>
+                     <h2 class="font-bold text-2xl">Get your free consultation</h2>
                      <p class="max-w-[400px] opacity-80">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Nostrum animi facere blanditiis autem deleniti quo
