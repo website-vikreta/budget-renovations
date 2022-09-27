@@ -83,13 +83,16 @@
             <div class="container mx-auto py-10 md:py-[100px]">
                <div class="flex items-center py-20 lg:py-0 gap-[100px]">
                   <div class="hidden lg:block img-wrapper w-full max-w-[400px]">
-                     <img
-                        src="./assets/img/about-hero-img.webp"
-                        alt="About Us Hero Image"
-                        class="hidden lg:block w-full"
-                        width="400"
-                        height="484"
-                     />
+                     <!-- To hide image on mobile & Tablet devices -->
+                     <!-- DIFFER OFFSCREEN IMAGES FIX -->
+                     <picture>
+                        <source
+                           media="(min-width: 976px)"
+                           srcset="./assets/img/about-hero-img.webp"
+                        />
+                        <img src="#" alt="" />
+                     </picture>
+                     <!-- --------------------------- -->
                   </div>
                   <div class="content">
                      <h3
