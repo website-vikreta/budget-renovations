@@ -305,7 +305,7 @@ class WebsiteFooter extends HTMLElement {
                   </div>
                   <!-- cta to social -->
                   <div class="flex flex-col gap-5 lg:mr-20">
-                     <h4 class="font-bold text-xl">Follow Us</h4>
+                     <h3 class="font-bold text-xl">Follow Us</h3>
                      <hr
                         class="h-px border-none bg-gradient-to-r from-light w-1/2 md:w-[100%]"
                      />
