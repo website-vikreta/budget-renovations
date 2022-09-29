@@ -363,7 +363,7 @@ class WebsiteFooter extends HTMLElement {
                   class="flex flex-wrap justify-between gap-10 xl:pl-[4.25rem] xl:w-3/5 xl:ml-auto"
                >
                   <div>
-                     <h5 class="font-bold text-md capitalize">Important Links</h5>
+                     <h4 class="font-bold text-md capitalize">Important Links</h4>
                      <ul class="mt-3 flex flex-col gap-1">
                         <li>
                            <a
@@ -389,7 +389,7 @@ class WebsiteFooter extends HTMLElement {
                      </ul>
                   </div>
                   <div>
-                     <h5 class="font-bold text-md capitalize">Sitemap</h5>
+                     <h4 class="font-bold text-md capitalize">Sitemap</h4>
                      <ul class="mt-3 grid grid-cols-2 gap-x-10 gap-y-1">
                         <li>
                            <a
@@ -429,7 +429,7 @@ class WebsiteFooter extends HTMLElement {
                      </ul>
                   </div>
                   <div>
-                     <h5 class="font-bold text-md capitalize">Resources</h5>
+                     <h4 class="font-bold text-md capitalize">Resources</h4>
                      <ul class="mt-3 flex flex-col gap-1">
                         <li>
                            <a

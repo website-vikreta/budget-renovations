@@ -71,6 +71,12 @@ nav .mobileNavMenu li a.active {
    color: var(--color-orange);
    font-weight: bold;
 }
+nav .mobileNavMenu {
+   z-index: 1000;
+}
+.mobileNavMenu {
+   box-shadow: 0 400px 1000px 300px rgba(0, 0, 0, 0.6);
+}
 
 .footer-overlay {
    background-image: linear-gradient(
