@@ -255,20 +255,20 @@ navLinks.forEach(link => {
 });
 
 // Sticky Navigation On Top
-const navigationMenu = document.querySelector('nav');
-window.onscroll = function () {
-   if (window.pageYOffset > 80) {
-      navigationMenu.style.position = "fixed";
-      navigationMenu.style.top = "0px";
-      navigationMenu.style.width = "100%";
-      navigationMenu.style.zIndex = "1000";
-   } else {
-      navigationMenu.style.position = "static";
-      navigationMenu.style.top = "initial";
-      navigationMenu.style.width = "100%";
-      navigationMenu.style.zIndex = "1000";
-   }
-}
+// const navigationMenu = document.querySelector('nav');
+// window.onscroll = function () {
+//    if (window.pageYOffset > 80) {
+//       navigationMenu.style.position = "fixed";
+//       navigationMenu.style.top = "0px";
+//       navigationMenu.style.width = "100%";
+//       navigationMenu.style.zIndex = "1000";
+//    } else {
+//       navigationMenu.style.position = "static";
+//       navigationMenu.style.top = "initial";
+//       navigationMenu.style.width = "100%";
+//       navigationMenu.style.zIndex = "1000";
+//    }
+// }
 
 
 // ===========================================================
